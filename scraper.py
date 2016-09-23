@@ -15,6 +15,8 @@ for row in table.findAll('tr')[1:]:
         text = cell.text.replace('&nbsp;', '')
         list_of_cells.append(text)
     list_of_rows.append(list_of_cells)
+
+#Removes "Detail" in each list
 for x in list_of_rows:
     del x[0]
 
